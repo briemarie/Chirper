@@ -26,6 +26,7 @@ body {
 .logo {
   width: 100px;
   height: 56px;
+  padding-bottom: 5%;
 }
 
 nav {
@@ -35,7 +36,8 @@ nav {
   background: black;
 }
 
-nav .brand, nav .brand a {
+
+nav .brand, nav .brand a, nav .brand li {
   margin-left: 25px;
   font-size: 18pt;
   text-decoration: none;
@@ -95,6 +97,7 @@ form.quirks {
   border:none;
   background:none;
   font-weight: :bold;
+  color: white;
 }
 
 #sign-in input {
