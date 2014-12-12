@@ -7,4 +7,17 @@ class User < ActiveRecord::Base
 
   has_many :chirps, through: :user_chirps
   has_many :user_chirps
+
+  def password=(plaintext)
+    self.password_hash = BCrypt::Password.create(plaintext)
+  end
+
+  def authenticate(plaintext_password)
+    if BCrypt::Password.new(self.password_hash) == plaintext_password
+      return true
+    else
+      return false
+    end
+  end
+
 end

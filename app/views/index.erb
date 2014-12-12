@@ -1,6 +1,17 @@
 <div class="container">
 
-  <%# TODO:
-  1. If user is not signed in - display "Welcome".
-  2. If user is signed in then  display all users %>
+<% if @session %>
+  <h3>Here are the latest Chirps:</h3>
+  <% @chirps.each do |chirp|  %>
+    <%= chirp.content  %>
+  <% end  %>
+  <h3>Some of our users</h3>
+  <% @users.each do |user|  %>
+    <%= user.name  %>
+  <% end  %>
+<% else %>
+  <h1>Welcome to Chirper</h1>
+  <h3>Please sign in or create a new user</h3>
+<% end  %>
+
 </div>
