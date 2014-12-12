@@ -26,6 +26,7 @@ body {
   width: 100px;
   height: 56px;
   padding-bottom: 5%;
+  display: inline;
 }
 
 nav {
@@ -33,6 +34,7 @@ nav {
   height: 60px;
   font-weight: bold;
   background: black;
+  display: inline-block;
 }
 
 
@@ -48,6 +50,11 @@ nav .brand, nav .brand a, nav .brand li {
 .brand li {
   padding-bottom: 20%;
   display: block;
+}
+
+nav .brand a {
+  display: inline-block;
+  color: #89d046;
 }
 nav ul {
   display: inline-block;
