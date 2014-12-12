@@ -6,7 +6,6 @@ body {
 }
 
 
-
 .container {
   margin: 20px auto;
   width: 800px;
@@ -46,6 +45,10 @@ nav .brand, nav .brand a, nav .brand li {
   display: inline-block;
 }
 
+.brand li {
+  padding-bottom: 20%;
+  display: block;
+}
 nav ul {
   display: inline-block;
   width: 30%;
@@ -58,7 +61,7 @@ nav li {
 }
 
 nav li a {
-  color: gray;
+  color: white;
   text-decoration: none;
 }
 
@@ -104,6 +107,11 @@ form.quirks {
   display: inline-block;
 }
 input {
-  border-radius: 8px;
+  border-radius: 10px;
   display: inline-block;
+}
+
+.submit input {
+  color: white;
+  border-radius: 5px;
 }
