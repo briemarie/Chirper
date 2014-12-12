@@ -12,17 +12,23 @@
 
 <h4>Your latest chirps</h4>
 <% @chirps.each do |chirp| %>
- <%= chirp.content %>
+<ul>
+  <li><%= chirp.content %></li>
+</ul>
 <% end %>
 
 <h4>this are your followers (people who follow you)</h4>
 <% @followers.each do |follower| %>
- <%= follower.name %>
-<% end %>
+<ul>
+  <li><a href="/users/<%= follower.id  %>"><%= follower.name %></a></li>
+</ul>
+ <% end %>
 
 <h4>This are your followees (people that you follow)</h4>
 <% @followees.each do |followee| %>
-  <%= followee.name %>
+<ul>
+  <li><a href=" /users/<%= followee.id  %>"><%= followee.name %></a></li>
+</ul>
 <% end %>
 
 
@@ -38,15 +44,18 @@
 </form>
 <% end %>
 
-<h1>Profile of : <%= @user.name  %></h1>
-<h4>this are <%= @user.name  %> followers</h4>
+<h4>this are your followers (people who follow you)</h4>
 <% @followers.each do |follower| %>
- <%= follower.name %>
+<ul>
+  <li><a href="/users/<%= follower.id  %>"><%= follower.name %></a></li>
+</ul>
 <% end %>
 
-<h4>This are <%= @user.name  %> followees </h4>
+<h4>This are your followees (people that you follow)</h4>
 <% @followees.each do |followee| %>
-  <%= followee.name %>
+<ul>
+  <li><a href=" /users/<%= followee.id  %>"><%= followee.name %></a></li>
+</ul>
 <% end %>
 
 <form action="/users/<%= @session %>/follow" method="post">
@@ -57,8 +66,11 @@
 
 </form>
 
+
+
 <% end %>
 
+<a href="/">Home</a>
 
 </div>
 
