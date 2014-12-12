@@ -79,3 +79,9 @@ form.quirks {
   background:none;
   font-weight: :bold;
 }
+
+#profile input {
+  border:none;
+  background:none;
+  font-weight: :bold;
+}
