@@ -1,0 +1,21 @@
+<div class="container">
+
+
+<% if @session == @user.id %>
+<p> this is your page now </p>
+
+<% else %>
+
+<form action="/users/<%= @session %>/followees" method="post">
+  <input type="hidden" name="followee_name" value="<%= @user.name %>">
+  <input type="hidden" name="followee_email" value="<%= @user.email %>">
+  <input type="submit" value="follow">
+
+
+</form>
+
+<% end %>
+
+
+</div>
+

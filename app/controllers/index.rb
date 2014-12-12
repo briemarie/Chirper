@@ -45,3 +45,10 @@ post '/users' do
   session[:user_id] = @user.id
   redirect '/'
 end
+
+get '/users/:id' do
+  @user = User.find(params[:id])
+  @session = session[:user_id]
+  erb :profile
+end
+
