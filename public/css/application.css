@@ -1,9 +1,10 @@
 body {
-    background-image: url("http://imgur.com/aQyMEMV.png");
+    background-image: url("http://imgur.com/UFkdTft.png");
     background-color: black;
     background-size: 100%;
-
+    color: white;
 }
+
 
 
 .container {
@@ -15,7 +16,11 @@ body {
 
 .container h1 {
   font-size: 17pt;
+  color: white;
+}
 
+.container h3 {
+  color: white;
 }
 
 .logo {
