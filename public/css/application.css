@@ -1,5 +1,5 @@
 body {
-    background-image: url("http://imgur.com/tY34hpM.png");
+    background-image: url("http://i.imgur.com/ASsdWZR.png");
     background-color: black;
     background-size: 100%;
     color: white;
@@ -32,8 +32,16 @@ nav {
   height: 60px;
   font-weight: bold;
   display: inline-block;
+  text-align: right;
 }
 
+a {
+  color: white;
+}
+
+.index {
+  text-align: left;
+}
 
 nav .brand, nav .brand a, nav .brand li {
   margin-left: 25px;
@@ -128,3 +136,4 @@ input {
   font-weight: :bold;
 
 }
+
