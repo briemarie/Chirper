@@ -119,4 +119,12 @@ input {
 .submit input {
   color: white;
   border-radius: 5px;
+
+}
+
+#profile input {
+  border:none;
+  background:none;
+  font-weight: :bold;
+
 }
