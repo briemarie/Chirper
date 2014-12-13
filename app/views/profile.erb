@@ -8,8 +8,7 @@
   <input type="submit" value="chirp">
 </form>
 
-<p> this is your page now </p>
-9
+<p> This is your page now: </p>
 <h4>Your latest chirps</h4>
 <% @chirps.each do |chirp| %>
 <ul>
@@ -17,14 +16,14 @@
 </ul>
 <% end %>
 
-<h4>this are your followers (people who follow you)</h4>
+<h4>These are your followers (people who follow you):</h4>
 <% @followers.each do |follower| %>
 <ul>
   <li><a href="/users/<%= follower.id  %>"><%= follower.name %></a></li>
 </ul>
  <% end %>
 
-<h4>This are your followees (people that you follow)</h4>
+<h4>These are your followees (people that you follow):</h4>
 <% @followees.each do |followee| %>
 <ul>
   <li><a href=" /users/<%= followee.id  %>"><%= followee.name %></a></li>
