@@ -58,8 +58,8 @@ end
 post '/users/:id/follow' do
   @user = User.find(params[:id])
   @followee = User.find_by(params[:followee])
-  @user.followees.create(params[:followee])
-  @followee.followers.create(name: @user.name, email: @user.email)
+  @user.followees << @followee
+  # @followee.followers.create(name: @user.name, email: @user.email)
   redirect "/users/#{@user.id}"
 end
 
