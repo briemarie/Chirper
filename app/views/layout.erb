@@ -13,13 +13,13 @@
 <body>
 
   <nav>
-
+    <% if current_user %>
     <div class="brand">
 
     <div class="brand"><a href="/users/<%= current_user.id %>">Profile <%= current_user.name %></a>
     </div>
     <ul>
-      <% if current_user %>
+
         <li>
           <form id="sign-out" action="/sessions/<%= current_user.id %>" method="post">
             <input name="_method" type="hidden" value="delete" />
