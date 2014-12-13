@@ -13,8 +13,10 @@
 <body>
 
   <nav>
+
     <div class="brand">
-      <!-- <a href="/"><img src="http://i.imgur.com/E0ujJjT.png" class="logo"/></a> -->
+
+    <div class="brand"><a href="/users/<%= current_user.id %>">Profile <%= current_user.name %></a>
     </div>
     <ul>
       <% if current_user %>
